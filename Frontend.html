@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار تطوير المواقع - HTML & CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <link rel="stylesheet" href="main.css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Cairo] bg-gray-100">
+    
+        <header class="bg-[#007bff] text-white sticky top-0 z-50">
+            <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+                <a href="#home" class="text-lg font-semibold">Dev Academy</a>
+        
+                <div class="flex lg:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+        
+                <ul id="navbar-menu" class="hidden lg:flex space-x-6">
+                    <li><a href="#home" class="hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">الرئيسية</a></li>
+                    <li><a href="#course-details" class="hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">محتوى المسار</a></li>
+                    <li><a href="#testimonials" class="hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">آراء الطلاب</a></li>
+                    <li><a href="#contact" class="hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">تواصل معنا</a></li>
+                </ul>
+        
+                <div class="hidden lg:flex space-x-4">
+                    <a href="https://wa.me/+2091172893" class="bg-[#007bff] text-white hover:bg-[#1DA851] px-4 py-2 rounded flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <a href="https://t.me/Amr_bsheer" class="bg-[#007bff] text-white hover:bg-[#3ea6df] px-4 py-2 rounded flex items-center">
+                        <i class="fab fa-telegram-plane mr-2"></i> Telegram
+                    </a>
+                    <a href="https://m.me/amrkhaled.basher" class="bg-[#007bff] text-white hover:bg-[#006bb3] px-4 py-2 rounded flex items-center">
+                        <i class="fab fa-facebook-messenger mr-2"></i> Messenger
+                    </a>
+                </div>
+            </nav>
+        
+            <!-- قائمة الهامبرغر للشاشات الصغيرة -->
+            <ul id="mobile-menu" class="lg:hidden hidden flex-col space-y-2 px-6 py-4 bg-[#007bff]">
+                <li><a href="#home" class="block text-white hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">الرئيسية</a></li>
+                <li><a href="#course-details" class="block text-white hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">محتوى المسار</a></li>
+                <li><a href="#testimonials" class="block text-white hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">آراء الطلاب</a></li>
+                <li><a href="#contact" class="block text-white hover:bg-[#e8f002] hover:text-gray-800 px-3 py-2 rounded">تواصل معنا</a></li>
+            </ul>
+        </header>
+
+    <main id="home">
+        <div class="hero-section-1">
+            <div class="hero-content">
+                <h1>مسار تطوير المواقع المستجيبة - HTML & CSS</h1>
+                <p>في هذا المسار، ستتعلم كيفية بناء مواقع ويب مستجيبة باستخدام HTML وCSS بالإضافة إلى كيفية تصميم المواقع لتكون متوافقة مع مختلف الأجهزة والشاشات.</p>
+                <a href="#" class="subscribe-button">اشترك الآن</a>
+            </div>
+        </div>
+        
+
+        <section id="course-details">
+            <div class="container">
+                <h2>محتوى المسار</h2>
+                <div class="details-icons">
+                    <div class="icon-box">
+                        <i class="material-icons">code</i>
+                        <h3>HTML & CSS</h3>
+                        <p>تعلم الأساسيات لبناء هيكل وتصميم صفحات الويب.</p>
+                    </div>
+                    <div class="icon-box">
+                        <i class="material-icons">devices</i>
+                        <h3>تصميم مستجيب</h3>
+                        <p>كيفية جعل المواقع تعمل بشكل رائع على جميع الأجهزة.</p>
+                    </div>
+                    <div class="icon-box">
+                        <i class="material-icons">brush</i>
+                        <h3>تطبيقات عملية</h3>
+                        <p>تطبيق عملي لبناء مواقع ويب تفاعلية وحديثة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>آراء الطلاب</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <p>"المسار ساعدني كثيراً في فهم كيفية بناء مواقع ويب مستجيبة. أنصح به الجميع!"</p>
+                        <span>- محمد علي</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"طريقة الشرح كانت سلسة ومفهومة. الآن أصبح لدي موقع ويب متوافق مع جميع الأجهزة."</p>
+                        <span>- فاطمة عبد الله</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"الكورس ممتاز ويغطي كل ما أحتاجه لبناء موقع ويب حديث."</p>
+                        <span>- أحمد محمود</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>طرق التواصل</h3>
+            <ul class="social-icons">
+                <li><a href="mailto:amrbsheer00@Gmail.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="tel:01091173893"><i class="fas fa-phone"></i></a></li>
+                <li><a href="https://x.com/Amrbsheer_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amr-bsheer-000amrbsheer/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/AMR-bsheer" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/amrkhaled.basher" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+        <p> Made With Love By Amr Khaled © 2024</p>
+    </footer>
+    <script>
+        // لإظهار قائمة الهامبرغر على الشاشات الصغيرة
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Academy</title>
+    <link rel="stylesheet" href="main.css/styles.css" />
+    <link rel="stylesheet" href="main.css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- بداية البار -->
+    <nav class="navbar navbar-expand-lg  sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">عن المنصة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/+201091172893" target="_blank">
+                            <i class="fab fa-whatsapp"></i> واتساب
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://m.me/amrkhaled.basher" target="_blank">
+                            <i class="fab fa-facebook-messenger"></i> ماسنجر
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://t.me/Amr_bsheer" target="_blank">
+                            <i class="fab fa-telegram-plane"></i> تيليجرام
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-warning me-2" onclick="login()">تسجيل الدخول</button>
+                    <button class="btn btn-light" onclick="signup()">إنشاء حساب</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- نهاية البار -->
+
+    <!-- بداية الصفحة الرئيسية -->
+    <section id="home">
+        <div class="home-content">
+            <h1>مرحبا بك في منصتنا التعليمية</h1>
+            <p>تعلم مهارات جديدة واكتسب معرفة تمكنك من النجاح.</p>
+            <button><a href="#courses"> استكشف الدورات</a></button>
+        </div>
+    </section>
+    <!-- نهاية الصفحة الرئيسية -->
+
+    <!-- قسم الدورات -->
+    <section id="courses">
+        <h2>الدورات المتاحة</h2>
+        <div class="courses-list">
+            <div class="course-card">
+                <i class="material-icons">code</i>
+                <!-- مثال على أيقونة البرمجة -->
+                <h3>دورة Frontend</h3>
+                <p>
+                    <a href="Frontend.html" target="_blank">مسار أساسيات Frontend.</a>
+                </p>
+            </div>
+            <div class="course-card">
+                <i class="material-icons">terminal</i>
+                <h3>دورة Backend</h3>
+                <p><a href="Backend.html" target="_blank">مسار اساسيات Backend.</a></p>
+            </div>
+            <div class="course-card">
+                <i class="material-icons">developer_mode</i>
+                <h3>دورة اساسيات البرمجة باستخدام لغة C#</h3>
+                <p>
+                    <a href="Basics of programming.html" target="_blank">مسار اساسيات البرمجة باستخدام C#.</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- نهاية قسم الدورات -->
+
+    <!-- قسم الخاص بالتعريف باعضاء المنصة -->
+    <section id="about">
+        <div class="learn-from-the-best">
+            <p>تعلم من الأفضل !</p>
+        </div>
+        <div class="about-container">
+            <div class="about-card">
+                <img src="/images/AmrKhaled.jpeg" alt="Amr Khaled" class="about-photo" />
+                <div class="about-info">
+                    <h3>مهندس.عمرو خالد</h3>
+                    <p>
+                        مطور ويب متخصص في تطوير واجهات المستخدم وتصميم المواقع
+                        الإلكترونية.
+                    </p>
+                </div>
+            </div>
+            <div class="about-card">
+                <img src="images/AserMazen.png" alt="Aser mazen" class="about-photo" />
+                <div class="about-info">
+                    <h3>مهندس.أسر مازن</h3>
+                    <p>
+                        مطور ويب متخصص في تطوير واجهات المستخدم وتصميم المواقع
+                        الإلكترونية.
+                    </p>
+                </div>
+            </div>
+            <div class="about-card">
+                <img src="images/AbdAllah.jpg " alt="Abd allah Elhalawany" class="about-photo" />
+                <div class="about-info">
+                    <h3>مهندس.عبدالله الحلواني</h3>
+                    <p>
+                        مطور ويب متخصص في تطوير واجهات المستخدم وتصميم المواقع
+                        الإلكترونية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- نهاية قسم التعريف -->
+
+    <!-- قسم اراء الطلاب -->
+    <section id="testimonials">
+        <div class="testimonials-container">
+            <h2>آراء الطلاب</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="images/hatem.jpg" alt="Student 1" class="testimonial-photo" />
+                    <div class="testimonial-info">
+                        <p>
+                            "لقد كانت تجربة التعلم هنا رائعة! الدروس كانت مفيدة ومفصلة،
+                            وفريق الدعم كان دائمًا متعاونًا."
+                        </p>
+                        <h4> حاتم حمدي</h4>
+                        <p>دورة: Frontend</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/hossam.jpg" alt="Student 2" class="testimonial-photo" />
+                    <div class="testimonial-info">
+                        <p>
+                            "تعلمت الكثير في وقت قصير. المحتوى كان منظمًا بطريقة ممتازة
+                            وساعدني في تطوير مهاراتي بشكل كبير."
+                        </p>
+                        <h4>حسام شومان</h4>
+                        <p>دورة: اساسيات البرمجة</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/OmarMohey.jpg" alt="Student 3" class="testimonial-photo" />
+                    <div class="testimonial-info">
+                        <p>
+                            "منصة تعليمية مميزة. الدورات شاملة وتغطي كل ما تحتاجه لتصبح
+                            محترفًا في المجال."
+                        </p>
+                        <h4>عمر محيي</h4>
+                        <p>دورة: Backend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- نهاية قسم اراء الطلاب -->
+
+    <!-- فورم التواصل -->
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <form id="contact-form">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    <!--نهاية فورم التواصل-->
+
+    <!-- طرق التواصل -->
+    <footer>
+        <div class="footer-content">
+            <h3>طرق التواصل</h3>
+            <ul class="social-icons">
+                <li>
+                    <a href="mailto:amrbsheer00@Gmail.com"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="tel:01091173893"><i class="fas fa-phone"></i></a>
+                </li>
+                <li>
+                    <a href="https://x.com/Amrbsheer_" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/amr-bsheer-000amrbsheer/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/AMR-bsheer" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/amrkhaled.basher" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p>Made With Love By Amr Khaled © 2024</p>
+    </footer>
+    <!-- نهاية طرق التواصل -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
